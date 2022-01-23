@@ -1,0 +1,137 @@
+{
+	"alpha": {
+		"start": 0.85,
+		"end": 0.54
+	},
+	"scale": {
+		"start": 1,
+		"end": 30,
+		"minimumScaleMultiplier": 1
+	},
+	"color": {
+		"start": "#ffef0f",
+		"end": "#db0b0b"
+	},
+	"speed": {
+		"start": -10,
+		"end": -100,
+		"minimumSpeedMultiplier": 0.5
+	},
+	"acceleration": {
+		"x": 0,
+		"y": -500
+	},
+	"maxSpeed": 0,
+	"startRotation": {
+		"min": 0,
+		"max": 0
+	},
+	"noRotation": false,
+	"rotationSpeed": {
+		"min": 0,
+		"max": 0
+	},
+	"lifetime": {
+		"min": 1,
+		"max": 0.75
+	},
+	"blendMode": "screen",
+	"frequency": 0.01,
+	"emitterLifetime": 100,
+	"maxParticles": 10,
+	"pos": {
+		"x": 0,
+		"y": 0
+	},
+	"behaviors": [
+		{
+			"type": "alpha",
+			"config": {
+				"alpha": {
+					"list": [
+						{
+							"time": 0,
+							"value": 0.62
+						},
+						{
+							"time": 1,
+							"value": 0
+						}
+					]
+				}
+			}
+		},						
+		{
+			"type": "moveSpeedStatic",
+			"config": {
+				"min": 100,
+				"max": 500
+			}
+		},
+		{
+			"type": "scale",
+			"config": {
+				"scale": {
+					"list": [
+						{
+							"time": 0,
+							"value": 0.25
+						},
+						{
+							"time": 1,
+							"value": 0.75
+						}
+					]
+				},
+				"minMult": 1
+			}
+		},
+		{
+			"type": "color",
+			"config": {
+				"color": {
+					"list": [
+						{
+							"time": 0,
+							"value": "fff191"
+						},
+						{
+							"time": 1,
+							"value": "ff622c"
+						}
+					]
+				}
+			}
+		},
+		{
+			"type": "rotation",
+			"config": {
+				"accel": 0,
+				"minSpeed": 10,
+				"maxSpeed": 50,
+				"minStart": 265,
+				"maxStart": 275
+			}
+		},
+		{
+			"type": "spawnShape",
+			"config": {
+				"type": "torus",
+				"data": {
+					"x": 0,
+					"y": 0,
+					"radius": 10,
+					"innerRadius": 0,
+					"affectRotation": false
+				}
+			}
+		}
+	],
+	"addAtBack": false,
+	"spawnType": "circle",
+	"spawnCircle": {
+		"x": 0,
+		"y": 300,
+		"r": 10
+	}
+}
