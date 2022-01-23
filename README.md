@@ -1,6 +1,6 @@
 # pixi-demo
 
-[Demo](https://wixhub.github.io/pixi-demo/dist/)
+[Demo](https://wixhub.github.io/pixi-demo/)
 
 Used PixiJS, Typescript, Webpack and NPM
 
